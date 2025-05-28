@@ -4,7 +4,7 @@ $port = '51274';
 $db = 'misc';
 $user = 'fred';
 $pass = 'zap';
- 
+$pdo = null;
 
 try {
     $pdo = new PDO("mysql:host=$host;port=$port;dbname=$db", $user, $pass);
