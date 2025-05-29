@@ -1,6 +1,7 @@
 <?php
 require_once "pdo.php";
 
+
 if (!isset($_GET['name']) || strlen($_GET['name']) < 1) {
     die('Name parameter missing');
 }
@@ -69,3 +70,5 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 </ul>
 </body>
 </html>
+
+

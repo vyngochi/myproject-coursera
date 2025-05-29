@@ -11,6 +11,13 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
 }
 ?>
 
+<?php
+// Luôn đặt setcookie trước bất kỳ HTML nào
+setcookie("wa4e_secret_cookie", "my_cookie_value_123", time() + 3600); // cookie tồn tại 1 giờ
+
+session_start(); // nếu bạn cần session
+?>
+
 <html>
 <head>
     <title>Vy Ngo Chi (dc8d48be)</title>

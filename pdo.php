@@ -10,7 +10,7 @@ try {
     $pdo = new PDO("mysql:host=$host;port=$port;dbname=$db", $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    echo '<p >Connection failed: ' . htmlentities($e->getMessage()) . '</p>';
+    echo '<p>Connection failed: ' . htmlentities($e->getMessage()) . '</p>';
     die(); 
 }
 ?>
