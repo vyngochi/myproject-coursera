@@ -3,7 +3,7 @@ $host = 'mainline.proxy.rlwy.net';
 $port = '51274';
 $db = 'misc';
 $user = 'fred';
-$pass = 'GFHvphftjOildxDjlRgicHXmNFTkNBNS';
+$pass = 'ZAP';
 $pdo = null;
 
 try {
