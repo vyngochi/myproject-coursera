@@ -12,11 +12,15 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
 ?>
 
 <?php
-// Luôn đặt setcookie trước bất kỳ HTML nào
-setcookie("wa4e_secret_cookie", "my_cookie_value_123", time() + 3600); // cookie tồn tại 1 giờ
-
-session_start(); // nếu bạn cần session
+// Note - cannot have any output before setcookie
+if ( ! isset($_COOKIE['zap']) ) {
+    setcookie('zap', '42', time()+3600);
+}
 ?>
+<pre>
+<?php print_r($_COOKIE); ?>
+</pre>
+<p><a href="cookie.php">Click Me!</a> or press Refresh</p>
 
 <html>
 <head>
